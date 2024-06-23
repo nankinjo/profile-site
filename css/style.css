@@ -27,5 +27,9 @@ body {
 
 /*サイト説明*/
 .about-chaption{
+	font-size: 15px;
 }
-
+.image.me{
+	margin: 0 15px 0 0;
+	display: flex;
+}
