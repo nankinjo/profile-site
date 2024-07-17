@@ -17,9 +17,29 @@
 
   <body>
 
+    <header class="header">
+      <h1>
+        <title>Daigo's profile</title>
+      </h1>
+      <nav class="header-nav">
+        <ul class="header-navlist">
+          <li class="header-navitem">
+            <a href="#About-this-site">このサイトについて</a>
+          </li>
+          <li class="header-navitem">
+            <a href="#About-me">自己紹介</a>
+          </li>
+          <li class="header-navitem">
+            <a href="#Works">制作物</a>
+          </li>
+          <li class="header-navitem">
+            <a href="#">連絡先</a>
+          </li>
+      </nav>
+    </header>
 
 
-    <section class="section">
+    <section id="About-this-site" class="section">
 	    <h1 class="section-headline">About this site</h1>
 	      <h2 class="about-chaption">
 		  ここは石川大悟のプロフィールサイトです。<br/>
@@ -27,7 +47,7 @@
 	     </h2>
     </section>
 
-    <section class="section section-2">
+    <section id="About-me" class="section section-2">
 	    <h1 class="section-headline">About me</h1>
               <figure class="about me">
 		<img class="image me" src="img/Icon.jpg" alt="image me">
@@ -40,27 +60,26 @@
                 </img>
  	      </figure>
               <dl class="sns link">
-		<a href="https://github.com/nankinjo">
-		  <i class="fa-brands fa-github"></i>
-                  <dd>GitHub</dd>
-	        </a>
+		<a href="https://github.com/nankinjo" target="_blank">
+                  <img class="sns icon" src="img/github.png" alt="octocat">GitHub</img>
+	        </a><br/>
+                <a href="https://qiita.com/nankinjo" target="_blank">
+                  <img class="sns icon" src="img/qiita.png" alt="octocat">Qiita</img>
+                </a>
 	      </dl>
     </section>
 
-    <section class="section">
+    <section id="Works" class="section">
 	    <h1 class="section-headline">Works</h1>
 	      <figure class="works">
 		<h2 class="about-chaption">
                   私の制作した成果物を紹介します。
 		</h2>
-                <ul>
-                  <li>
-		    <dl>
 		      <dt class="chaption-title">
 			      私のプロフィール
 		      </dt>
 		      <dd>
-	                <img src="#" alt="My Profile">
+	                <img class="worksdata" src="img/profilearch.png" alt="My Profile">
 		      </dd>
 		      <dd class="about-chaption">
 			      こちらのプロフィールサイトです。</br>
