@@ -1,21 +1,19 @@
 @charset "utf-8";
 
-@media screen and
-
 
 /*ベーススタイル*/
 body {
 	font-family: "Noto Sans JP","Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
         font-size: 15px;
 	line-height: 1.5;
-	color: #333
+	color: #000;
         caret-color: transparent;
 }
 
 /*セクション*/
 .section{
         text-align: center;
-	padding: 800px ;
+	padding: 800px 15px;
         background-color: #90EE90;
 }
 .section.section-2{
@@ -24,12 +22,12 @@ body {
 	background-color: #D3D3D3;
 }
 .image.me{
-        width: 150px;
+        width: 250px;
         height: auto;
         display: flex;
         align-self: flex-start;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
         .image. me{
            width: 600px;
            height: auto;
@@ -86,23 +84,19 @@ body {
 
 /*サイト説明*/
 .about.me{
-        margin: 0;
+        margin: auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
 }
 .about-chaption{
 	font-size: 15px;
         padding-left: 15px;
 }
-@media screen and (max-width: 768px){
-        .about-chaption{
-           font-size: 30px;
-           padding: 15px;
-        }
-}
-
 
 .sns.icon{
-        width: 5%;
+        width: 15px;
+        max-width: 5%;
         height: auto;
         font-size: 15px;
 }
@@ -115,4 +109,10 @@ body {
 }
 .worksdata:hover{
         transform: scale(1.06);
+}
+@media screen and (max-width: 480px){
+        .about.me{
+           margin: auto;
+           display: block;
+        }
 }
