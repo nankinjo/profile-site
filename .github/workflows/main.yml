@@ -1,1 +1,14 @@
-
+name: Attempt to auto-deploy　to S3
+one:
+   push:
+     branches:
+     - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: 
+      with:
+        args:
+      env:
+        AWS_S3_BUCKET: ${{}}
